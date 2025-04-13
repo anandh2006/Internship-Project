@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+nav {
+  background-color: #0077b6;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #90e0ef;
+}
+
+/* === Hero Section (Homepage) === */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #caf0f8;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #0077b6;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 10px 50px;
+  background-color: #0077b6;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #023e8a;
+}
+
+/* === Doctors Section === */
+.doctors {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.doctors h2 {
+  font-size: 2rem;
+  color: #0077b6;
+  margin-bottom: 40px;
+}
+
+.doctor-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.doctor-card {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 119, 182, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+}
+
+.doctor-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.doctor-card h3 {
+  color: #0077b6;
+  margin-bottom: 5px;
+}
+
+.doctor-card p {
+  color: #555;
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+/* === Appointment Booking Section === */
+.book {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.book h2 {
+  font-size: 2rem;
+  color: #0077b6;
+  margin-bottom: 30px;
+}
+
+.book-form {
+  display: block;  /* Change to block-level for vertical stacking */
+  width: 100%;
+  max-width: 450px;  /* Controls the form width */
+  margin: 0 auto;  /* Centers the form */
+  background-color: #f8f9fa;  /* Light background for form */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 119, 182, 0.1); /* Soft shadow */
+}
+
+.book-form label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;  /* Ensure the label appears above the input */
+  text-align: left;  /* Left-align labels */
+}
+
+.book-form input,
+.book-form select {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;  /* Ensure full width for inputs */
+  margin-bottom: 15px;  /* Space below each input field */
+}
+
+.book-form button {
+  padding: 14px 20px;
+  background-color: #0077b6;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;  /* Space between button and last input field */
+}
+
+.book-form button:hover {
+  background-color: #023e8a;
+}
+
+.book-form input:focus,
+.book-form select:focus {
+  border-color: #0077b6;  /* Highlight border on focus */
+  outline: none;
+}
+
+/* Optional: Add responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .book-form {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+/* === General Reset & Base Styling === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* === Navbar === */
+nav {
+  background-color: #0077b6;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #90e0ef;
+}
+
+/* === Appointment Section === */
+.appointment {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.appointment h2 {
+  font-size: 2rem;
+  color: #0077b6;
+  margin-bottom: 30px;
+}
+
+form {
+  display: block;  /* Stack form elements vertically */
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 119, 182, 0.1);
+}
+
+form label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+  text-align: left;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+form button {
+  padding: 14px 20px;
+  background-color: #0077b6;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+form button:hover {
+  background-color: #023e8a;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #0077b6;
+  outline: none;
+}
+
+/* === Footer === */
+footer {
+  background-color: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+}
+
+
+
+
+
+/* === Contact Section === */
+.contact {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: #0077b6;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  max-width: 500px;
+  margin: 0 auto;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* === Footer === */
+footer {
+  background-color: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+}
+.services {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f8fbff;
+}
+
+.services h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #0077b6;
+}
+
+.service-boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.service {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 25px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0, 119, 182, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+.service h3 {
+  color: #0077b6;
+  margin-bottom: 10px;
+}
+
+.service p {
+  color: #555;
+  font-size: 0.95rem;
+}
